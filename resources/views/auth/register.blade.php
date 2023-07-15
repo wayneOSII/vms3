@@ -20,6 +20,11 @@
             </div>
 
             <div class="mt-4">
+                <x-label for="student_id" value="{{ __('Student ID') }}" />
+                <x-input id="student_id" class="block mt-1 w-full" type="text" name="student_id" :value="old('student_id')" required autofocus />
+            </div>
+
+            <div class="mt-4">
                 <x-label for="password" value="{{ __('Password') }}" />
                 <x-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
             </div>
